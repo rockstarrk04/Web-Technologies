@@ -1,0 +1,29 @@
+/* 1. Element Selector */
+h1{
+    background-color: aqua;
+    font-size: x-large;
+    color: red;
+}
+
+#abc{
+    text-decoration: underline;
+}
+
+/* 2. Group Selector */
+h1,h3{
+    text-decoration: underline;
+}
+
+/* 3. Universal Selector */
+*{
+    font-family: sans-serif;
+    text-align: left;
+}
+
+/* 4. Attribute Selectors */
+input[type="text"]{
+    background-color: greenyellow;
+}
+input[type="password"]{
+    background-color: yellow;
+}

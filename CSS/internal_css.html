@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Types of Selectors */
+
+        /* 1. Element Selector */
+        h1{
+            color: red;
+            text-align: center; 
+        }
+
+        #abc{
+            color: rgb(238, 3, 238);
+        }
+/* here Both h1 and #abc is referring same tag but internally css prioritized #abc than h1{...} Because CSS uses specificity */
+       
+        h3{
+            color: green;
+            text-align: left;
+        }
+
+        /* 2. group selectors */
+        p , h3{
+            font-style: italic;
+            text-decoration: underline;
+            text-align: justify;
+        }
+
+
+        /* 3. Universal Selector */
+        *{
+            font-family: sans-serif;
+        }
+
+        /* 4 . Attribute Selector    */
+        /* Mostly this selector type is widely used in form tag */
+        input[type="text"]{
+            background-color: yellow;
+            font-size: larger;
+        }
+        input[type="password"]{
+            background-color: greenyellow;
+            font-size: x-large;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to Internal CSS</h1>
+    <h3>This is a h3 tag</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, libero sapiente asperiores pariatur optio iure distinctio placeat aperiam magni? Corrupti, exercitationem? Obcaecati optio eligendi eveniet, esse placeat consequuntur expedita, autem molestias repellat quibusdam doloribus iste dolore omnis! Aut maiores ad iste quos doloremque temporibus fugiat a necessitatibus quaerat animi. Possimus esse atque dolorem, consectetur nesciunt doloribus hic et ipsum exercitationem, repellat reprehenderit aliquid officiis. Repudiandae earum et quasi impedit! Est eaque ut id nam ratione maxime quisquam vero, sapiente minima, sint saepe harum voluptatum expedita eos mollitia inventore odio dolorem, quae rem architecto voluptatibus molestiae et quia commodi. Unde, sit.</p>
+    
+    <h1 id="abc">Hello CSS</h1>
+
+    <h3>This is a h3 tag</h3>
+    <p id="abc">This is a paragraph tag <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit omnis obcaecati incidunt illum blanditiis eos veritatis itaque unde adipisci accusamus est ex, sed ullam deserunt nostrum libero corporis. Animi, nisi corporis non debitis alias omnis libero quod, atque nesciunt architecto laudantium delectus veniam nemo explicabo. Nihil quo sit necessitatibus voluptates vel mollitia harum natus odit iure assumenda, recusandae quaerat quas? Aliquam inventore non at quaerat facilis, veniam laudantium pariatur eaque qui adipisci, omnis fugiat voluptatum molestiae repudiandae fugit repellat, optio dignissimos aut nemo! Sit accusamus qui nobis nisi incidunt quo iure similique alias omnis dolorem adipisci reprehenderit fugiat consectetur unde, maiores tempora voluptas optio neque ipsa repellendus minima error! Saepe, distinctio? Unde repellat veritatis ut id inventore corporis maiores qui fugiat ratione, nulla numquam aspernatur, nesciunt debitis, laborum quibusdam! Assumenda accusantium itaque deleniti beatae unde! Laudantium quam, rerum impedit quia numquam commodi possimus dolores tempore illo, earum dicta, facilis reprehenderit nostrum corporis cupiditate doloribus exercitationem quos sapiente. Fugit voluptatibus sit officia adipisci nisi ratione, quibusdam esse omnis eaque. Id, delectus rerum ullam voluptate ipsa nulla dicta? Voluptate maiores temporibus cumque, omnis iste sed odit, molestiae ratione eligendi ex natus aperiam est velit architecto officia, cupiditate vero. Omnis nihil veniam rem.</p>
+    <br><br><br>
+
+
+    <input type="text" placeholder="Enter name">
+    <input type="text" placeholder="Enter Mobile number">
+    <br>
+    <br>
+    <input type="password" placeholder="Enter old password">
+    <input type="password" placeholder="Enter new password">
+    <br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+</body>
+</html>
