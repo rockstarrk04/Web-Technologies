@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        sup{
+            color: red;
+        }
+        label{
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Creation of Forms</h1>
+    <br><br><br>   
+
+    <fieldset>
+        <legend align = "center">Bio Data</legend>
+        <form method="post" action="./Welcome.html" target="_blank">
+
+        <label>Username : </label> 
+        <input type="text" name = "fname" placeholder="Enter First name" >
+        &nbsp;&nbsp;&nbsp;
+        <input type="text" name = "lname" placeholder="Enter Last name">
+        <br><br><br>
+        <label>Email : </label>
+        <input type="email" name="email" placeholder="Enter email address">
+        <br><br><br>
+        <label>Password : <sup>*</sup> </label>
+        <input type="password" placeholder="Enter password" name="password" required>
+        <br><br><br>
+        <label>Contact Number : </label>
+        <input type="tel" pattern="[6-9]{1}[0-9]{9}" name = "Contact_number " placeholder="Enter Contact number">
+        <br><br><br>
+        <label>Age : </label>
+        <input type="number" name="age" min="0" max="99" placeholder="0-99">
+        <br><br><br>
+        <label>Range : </label>
+        <input type="range" name="count" min="100" max = "1000">    
+        <br><br><br>
+        <label>Date : </label>
+        <input type="date" name="DOB">
+        <label>Time </label>
+        <input type="time" name="time">
+        <br><br><br>
+        <label >Month Week : </label>
+        <input type="month" name="month">
+        <input type="week" name="week">
+        <br><br><br>
+        <label>Date Time : </label>
+        <input type="datetime-local" name = "date-time">
+        <br><br><br>
+        <label>Search : </label>
+        <input type="search" name="search" placeholder="Enter the search">
+        <br><br><br>
+        <label>URL : </label>
+        <input type="url" name="URL" placeholder="Enter URL">
+        <br><br><br>
+        <label>Upload File : </label>
+        <input type="file" name="file">
+        <br><br><br>
+        <label>Colour : </label>
+        <input type="color">
+        <br><br><br>
+
+
+        <!-- Radio button -->
+        <label>Gender : </label>
+        <br>
+        <label for="m">Male</label>
+        <input type="radio" name="gender" value="Male" id="m" checked>
+        <br>
+        <label for="f">Female</label>
+        <input type="radio" name="gender" value="Female" id="f">
+        <br>
+        <label for="o">Others</label>
+        <input type="radio" name="gender" value="Others" id="o" disabled>
+        <br><br>
+
+        <!-- Checkbox -->
+
+        <label>Known Languages : </label>
+        <br>
+        <label for="English">English</label>
+        <input type="checkbox" name="lang" id="English" checked>
+        <label for="Tamil">Tamil</label>
+        <input type="checkbox" name="lang" id="Tamil" checked>
+        <label for="Hindi">Hindi</label>
+        <input type="checkbox" name="lang" id="Hindi">
+        <label for="Kannada">Kannada</label>
+        <input type="checkbox" name="lang" id="Kannada" disabled>
+
+
+        <br><br>
+        <label>Select location : </label>
+        <select name="location">
+            <option>--Select location--</option>
+            <option value="Bangalore" disabled>Bangalore</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Pune">Pune</option>
+        </select>
+        
+        <br><br>
+        <input type="reset">
+        <input type="submit" value="Register" height="100" width="200">
+
+    </form>
+    </fieldset>
+
+</body>
+</html> 

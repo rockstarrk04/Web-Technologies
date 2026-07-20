@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Tag</title>
+</head>
+<body>
+    <h1>Introduction to Media Tags</h1>
+    <h3>Insertion of Images</h3>
+    <hr>
+    <br><br><br>
+    <img src="./Images/smiley emoji.jpg" height="200">
+    <img src="./Images/car.jpg" height="200" alt="Image not found">
+    <img src="./Images/car.j" height="200" alt="Image not found">
+    <hr>
+
+    <h3>Insertion of Videos</h3>
+    <br><br><br>
+    <video controls src="./Videos/bird_video.mp4" height="500" width="500" alt = "no video"></video>
+
+    <video autoplay muted loop src="./Videos/ocean_waves.mp4" height="500" width="500" ></video>
+    <hr>
+
+    <h3>Insertion of Audios</h3>
+    <audio controls mu src="./Audio/grand_project-wonders-of-the-earth-550792.mp3"></audio>
+
+    <hr>
+    <h3>Introduction to iframes </h3>
+
+    <iframe src="./Images/smiley emoji.jpg" height="300" width="300"></iframe>
+
+    <iframe height="300" width="300" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.385489235639!2d77.56265767481932!3d12.947166965414016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15f734806b17%3A0x955be8d8967b780a!2sQSpiders%20Basavanagudi!5e0!3m2!1sen!2sin!4v1783687094570!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    
+    <marquee direction="right" scrollamount = 20 >
+            <img src="./Images/gif1.gif" height="200" width="200">
+            <img src="./Images/gif2.gif" height="200" width="200">
+    </marquee>
+
+    <!-- 
+        Media Tags:
+            It is used to insert media's on webpage like images , videos and audios
+
+        Insertion of Images:
+            <img src= " --path of the image file-- " alt =" --error message-- " >
+            NOTE : 
+                Image tag is example of umpaired tag & it is a Inline Level Element
+                
+        Insertion of Video:
+            <video src= " --path of the video file-- " > </video>
+            NOTE : 
+                Video tag is a example of paired tag & it is a inline Level Element
+
+            Attributes present in video tag
+                -- "controls" attribute is used to get the controller of video
+                -- "autoplay"  attribute is used to make the video as autoplay & autoplay will 
+                    work with "muted" condition
+                -- "loop" attribute is used to to play the video continuosly when video is in autoplay
+
+        Insertion of Audio : 
+            <audio src = "--path of the audio file-- " > </audio>
+            NOTE:
+                Audio tag is an example for paired tag & it is a inline level elements
+
+            Attributes present in audio Tags
+                -- "controls" attribute is used to get the controller of audio
+    -->
+</body>
+</html>

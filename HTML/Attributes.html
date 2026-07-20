@@ -1,0 +1,83 @@
+<!-- 09/07/26 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Attributes :
+            Attributes are the properties of HTML elements, It is used to add the additional 
+            Information for HTML elements.
+            
+        NOTE:
+            Attributes are written inside the open tags with Name anad Value pair
+    -->
+    <h1 title="Hyper Text Markup Language">
+        HTML
+    </h1>
+    <h1 title="Cascading Style Sheet">
+        CSS
+    </h1>
+
+    <!-- 
+        In above example , "title" is an attribute : It is used to give title name for HTML elements 
+    -->
+    <h1>
+        <!-- abbr indicates : abbreviation (full form) tag -->
+        <abbr title="Javascript Object Notation">
+            JSON
+        </abbr>
+    </h1>
+
+    <p>
+        <abbr title="Dummy Paragraph">Lorem</abbr> ipsum <mark>dolor sit amet</mark> consectetur adipisicing elit.
+        <i>Quo quibusdam veniam</i> <em>reprehenderit alias.</em> Assumenda debitis illo <b>magni aliquid voluptatibus</b> 
+        quasi quos sed quas <u>vitae perspiciatis voluptatum</u>, nemo omnis est natus.
+    </p>
+    <hr>
+
+    <!-- 
+        Marquee is used for moving text on webpage
+    -->
+    <marquee>
+        CSS
+    </marquee>
+
+    <hr>
+
+    <marquee scrollamount ="30" behavior = "slide">
+        Javascript
+    </marquee>
+
+    <marquee scrollamount = "100" height = "100" bgColor="orange">
+        🚗💨 <nbsp> 🚓🚓🚓</nbsp>
+        <br>
+        🚗💨 <nbsp> 🚓🚓🚓</nbsp>
+    </marquee>
+
+    <!-- 
+    Marquee Tag:
+        - It is used to scroll the contents from one end to another end.
+        - Default direction of scrolling content is towards left (right to left)
+        - To change the direction of scrolling content we are using "direction" attribute & it consist of 4 directions
+          i.e., left (default) / right / up / down
+        - To manage the speed we are using "scrollamount" attribute
+        - "behavior" attribute is used to change the behaviour of scrolling contents like alternate / slide
+        - Without direction attribute it won't display the text in webpage.
+        NOTE: <marquee> tag is a example for block level element & it is a paired tag.
+    -->
+    
+    <marquee behavior="alternate"  bgColor= "skyblue" height = "100" scrollamount = "200">
+        <marquee direction="right">
+            🦸
+        </marquee>
+    </marquee>
+
+
+</body>
+</html>
