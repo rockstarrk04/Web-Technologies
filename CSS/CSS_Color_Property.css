@@ -1,0 +1,36 @@
+h1{
+    text-align: center;
+}
+
+h2{
+    color: red;
+}
+
+.hardcode1{
+    color: white;
+    background-color: blue;
+}
+
+.hardcode2{
+    color: black;
+    background-color: red;
+}
+
+.Hexadecimal1{
+    color: #000000;
+    background-color: #00ff00;
+}
+
+.Hexadecimal2{
+    color: #ff0000;
+    background-color: #0000ff;
+}
+
+.decimal1{
+    background-color: rgb(255, 255, 0);
+
+}
+
+.decimal2{
+    background-color: rgb(0, 255, 255);
+}
