@@ -9,7 +9,7 @@ h1{
     filter: contrast();
     filter: opacity(50%);
     filter: saturate(55%);
-    box-shadow: 10px 10px 5px greenyellow;
+    box-shadow: 10px 10px 5px greenyellow; /* used to make shadow of the actual image's border */
 
 }
 
@@ -20,6 +20,6 @@ h1{
     filter: contrast();
     filter: opacity(50%);
     filter: saturate(55%);
-    filter: drop-shadow(10px 30px 5px black);
+    filter: drop-shadow(10px 30px 5px black);  /* used to make shadow of the actual image itself */
 
 }
