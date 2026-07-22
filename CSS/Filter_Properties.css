@@ -1,0 +1,25 @@
+h1{
+    text-align: center;
+    color: tomato;
+}
+#image1{
+    height: 250px;
+    width: 500px;
+    filter: brightness(70%);
+    filter: contrast();
+    filter: opacity(50%);
+    filter: saturate(55%);
+    box-shadow: 10px 10px 5px greenyellow;
+
+}
+
+#image2{
+    height: 250px;
+    width: 250px;
+    filter: brightness(70%);
+    filter: contrast();
+    filter: opacity(50%);
+    filter: saturate(55%);
+    filter: drop-shadow(10px 30px 5px black);
+
+}

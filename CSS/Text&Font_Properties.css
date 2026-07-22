@@ -1,0 +1,57 @@
+#para1{
+    width: 75%;
+    margin: auto;
+    text-align: justify; /* left (default) / center / right / justify */
+    text-indent: 50px; /* just to give tab space only on the first line of para*/
+    line-height: 25px; /* just to give the height between text lines*/
+    word-spacing: 10px; /* just to give spacing between the words in text lines*/
+    text-transform: uppercase; /* lowercase / uppercase / capitalize */
+    
+    /* Design for text */
+
+    text-decoration-line: underline; /* underline / overline / line-through */
+    /* without ext-decoration-line all other ext-decoration-line properties won't work */
+    text-decoration-style: dashed; /* none (default) / solid / dashed / dotted / double */
+    text-decoration-thickness: 2px;
+    text-decoration-color: red;
+
+}
+
+#para2{
+    width: 75%;
+    margin: auto;
+    text-align: justify; /* left (default) / center / right / justify */
+    text-indent: 50px; /* just to give tab space only on the first line of para*/
+    line-height: 25px; /* just to give the height between text lines*/
+    word-spacing: 10px; /* just to give spacing between the words in text lines*/
+    text-transform: uppercase; /* lowercase / uppercase / capitalize */ 
+    letter-spacing: 5px;
+    /* Design for text */
+
+    text-decoration: underline dashed 2px green;
+}
+
+h1{
+    text-align: center;
+    text-shadow: 5px 5px 5px red;
+}
+
+#para3{
+    width: 70%;
+    margin: auto;
+    text-align: justify;
+    line-height: 25px;
+
+    /* font-size: 25px;
+    font-style: italic;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-variant: small-caps; */
+
+    /* Syntax: [ [ <'font-style'> || <font-variant-css2> || <'font-weight'> || <font-width-css3> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'># ] | <system-family-name>
+
+ */
+    font: bold italic 25px sans-serif  
+
+    
+}
