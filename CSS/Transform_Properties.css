@@ -1,0 +1,13 @@
+.box{
+    margin: auto;
+    border: solid 5px black;
+    background-image: url('./Image/image1.jpg');
+    height: 1000px;
+    width: 1000px;
+
+    /* transform: rotate(45deg); */
+    /* transform: skew(30deg); */
+    /* transform: scale(.5); */
+    /* transform: rotateX(45deg); */
+    
+}
