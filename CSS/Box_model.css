@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.h1{
+    margin-left: 100px;
+}
+.box{
+    height: 100px;
+    width: 150px;
+    border: solid 5px black;
+    background-color: yellow;
+    margin: 10px;
+}
+
+/* NOTE: all margin and padding properties are known as HIDDEN Properties - because they are not visible in webpages */
+/* Shortcut - margin / padding :
+
+    1. all sides        10px
+    2. T & B , L & R    (10px 20px)
+    3. T , L & R , B    (10px 20px 30px)
+    4. T , R , B , L    (10px 20px 30px 40px)
+*/
+
+.box2{
+    height: 100px;
+    width: 150px;
+    border: solid 5px black;
+    background-color: green;
+    margin:auto;
+
+}
+
+.box3{
+    height: 100px;
+    width: 150px;
+    border: solid 5px black;
+    background-color: red;
+    margin: 10px 20px 30px 40px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.box4{
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+    padding: 30px;
+    border:solid 2px black;
+}
+
