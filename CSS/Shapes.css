@@ -53,19 +53,20 @@
     
 }
 .chat_icon{
-    border: solid 5px green;
-    background-color: green;
+    border: solid 5px black;
+    background-color: rgb(62, 224, 62);
     height: 100px;
     width: 100px;
     border-radius: 200%;
     border-bottom-right-radius: 100% 0%;
+    ;
     
 }
 
 .triangle{
-    border: solid 5px red;
-    background-color: red;
-    height: 150px;
-    width: 150px;
-    
+    height: 0;
+    width: 0;
+    border-left: 100px solid white;
+    border-right: 100px solid white;
+    border-bottom: 100px solid red;
 }
