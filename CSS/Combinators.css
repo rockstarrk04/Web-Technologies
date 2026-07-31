@@ -1,0 +1,23 @@
+/* Desendent Selector Combinator  (space)*/
+div p {
+    color: red;
+    text-align: center;
+}
+
+/* Child Selector Combinator ( > )*/
+div > p {
+    background-color: yellow;
+    text-decoration: line-through;
+}
+
+/* Adjacent Sibling Selector Combinator ( + ) */
+div + p {
+    font-weight: bold;
+    text-align: right;
+}
+
+/* General Sibling Selector Combinator ( ~ ) */
+div ~ p {
+    background-color: aqua;
+    text-transform: uppercase;
+}
