@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h3{
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10vh auto;
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    border: solid 2px black;
+}
+
+.lg1{
+    /* background: red; */
+    background-image: linear-gradient(red , green , blue , black , orange , pink , brown);
+}
+
+.circle{
+    height: 50px;
+    width: 50px;
+    border: solid 2px black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clr1{
+    background-image: linear-gradient(red , blue);
+
+}
+.lg2{
+    background-image: linear-gradient(to left ,violet,  orange,red,yellow);
+    /*  */
+}   
+
+.lg3{
+    background-image: linear-gradient(to top left, white 50%, black 50%);
+    transform: rotate(45deg);
+    border: none;
+    /* to bottom (default) / to top  / to left / to right  /
+    to top right  / to top left / to bottom left / to bottom right */
+}
+
+.rg1{
+    background-image: radial-gradient(red , white , yellow);
+}
+
+.rg2{
+    background-image: radial-gradient(circle at top, red , white , yellow);
+    /* circle at center (default) / circle at top / circle at bottom / 
+    circle at left / circle at right */
+}
+.rg3{
+    background-image: radial-gradient(circle at bottom,brown 50% , white 50% , yellow);
+    border: none;
+    box-shadow: 5px 5px 5px black;
+}
+
+.cg1{
+    background-image: conic-gradient(yellow , red , white , yellow);
+}
+
+.cg2{
+    background-image: conic-gradient(yellow , red , white , yellow);
+
+}
+.op1{
+    background: linear-gradient(rgb(184, 125, 125))
+}
+.rlg{
+    background: repeating-linear-gradient(red , black ,white 20%);
+}
+.rrg{
+    background: repeating-radial-gradient(red , black ,white 5%);
+}
+.rcg{
+    background: repeating-conic-gradient(red , black ,white 10%);
+}
+
+.design{
+    display: flex;
+    
+}
+
+.leaf1{
+    /* margin: 10vh auto; */
+    border: solid 1px none;
+    background: linear-gradient(to bottom right, yellow 50%,red 50%);
+    height: 200px;
+    width: 200px;
+    border-radius: 100% 0%;
+}
+.leaf2{
+    
+    border: solid 1px none;
+    background: linear-gradient(to bottom left, green 50%,blue 50%);
+    height: 200px;
+    width: 200px;
+    border-radius: 0% 100%;
+}
+
+.small_clr{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%; 
+    margin: 10vh 10vh;
+    background: white;
+}
+
+h1{
+    text-align: center;
+    padding: 3vh 0;
+    font-size: 50px;
+    font-family: sans-serif;
+
+    background: linear-gradient(yellow 50%, red 50%);
+    color: transparent;
+    background-clip: text;
+}
+.header{
+    background: black;
+}
