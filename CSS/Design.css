@@ -1,0 +1,59 @@
+*{
+    margin: 0;padding: 0;
+}
+
+ul{
+    text-align: center;
+    list-style-type: lower-greek;
+    list-style-position: inside;
+    /* list-style-image: url(./Image/image1.jpg); */
+    list-style-image: linear-gradient(red , yellow , blue);
+}
+li:nth-child(odd){
+    background: yellow;
+}
+
+table , th , td{
+    border: solid 1px black;
+}
+
+table{
+    margin: 10vh auto;
+    height: 300px;
+    width: 400px;
+    border-collapse: collapse;
+}
+td{
+    font-weight: bold;
+    text-align: center;
+}
+
+li:nth-child(odd){
+    background: yellow;
+}
+
+tr:nth-child(even){
+    background: orange;
+}
+tr:nth-child(odd){
+    background: yellow;
+}
+
+.formbox{
+    border: solid 2px black;
+    width: 30%;
+    margin: 10vh 20vw;
+    background:linear-gradient(to bottom right , navy 50% , white 50%);
+    border-radius: 20px;
+}
+.formbox input{
+    margin: 5vh 10vw;
+    border: solid 1px black;
+    border-radius: 20px;
+    padding: 10px 10px;
+}
+.formbox button{
+    margin: 5vh 10vw;   
+    border: solid 1px black;
+    border-radius: 20px;
+}
