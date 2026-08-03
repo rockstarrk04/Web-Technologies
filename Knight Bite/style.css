@@ -292,6 +292,7 @@ element.style {
     padding: 10px 5px;
     list-style-position: inside;
     cursor: pointer;
+    list-style-type: disc;
 }
 
 .footer-link {
