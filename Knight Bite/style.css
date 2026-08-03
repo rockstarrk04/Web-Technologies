@@ -4,27 +4,25 @@
     font-weight: normal;
     box-sizing: border-box;
     font-family: sans-serif;
-    background: transparent;
 }
 
 .appbar {
-    zoom: 0.8;
     z-index: 2;
     display: flex;
     position: fixed;
     top: 0;
-    height: 140px;
-    width: 100%;
-    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1500px;
+    height: 120px;
     align-items: center;
+    background: rgba(10, 10, 10, 0.92);
 }
 
 .logo{
-    width: 35%;
-    text-align: center;
-    margin:20px 100px ;
     width: 150px;
     height: 90px;
+    margin: 15px 100px;
     background: url(https://nrzl4apc.knight-bite.com/main/res/brand-logo.svg);
     background-repeat: no-repeat;
     background-size: 150px 90px;
@@ -38,32 +36,23 @@ nav{
 .nav{
     margin-left: auto;
     margin-right: 100px;
-    transition: all 0.5s;
 }
 
 ul{
     display: flex;
-    margin-right: 80px;
+    gap: 45px;
     list-style-type: none;
-    unicode-bidi: isolate;
 }
 
 .nav a{
     text-decoration: none;
-    font-size: 22px;
-    color: rgba(255, 255, 255, 0.781);
-    font-weight: 300;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 a{
     cursor: pointer;
-    margin-left: 50px;
     text-decoration: none;
-    font: bold;
-}
-
-a:hover{
-    color: rgba(137, 43, 226, 0.674);
 }
 
 div{
@@ -71,21 +60,18 @@ div{
 }
 
 .app-link{
-    width: 100%;
-    height: 100vh;
+    width: 1500px;
+    height: 900px;
     background: url(./Image/Burger.jpg);
     background-size: cover;
+    background-position: center;
     text-align: center;
 }
 
 .app-link>h3 {
     color: white;
-    font-family:sans-serif;
-    padding-top: 40vh;
+    padding-top: 320px;
     font-size: 5em;
-    white-space: nowrap;
-    overflow: hidden;
-    transition: all .4s;
     text-transform: uppercase;
     letter-spacing: 1.5px;
 }
@@ -111,7 +97,6 @@ a:link{
     height: 68px;
     background: url(https://nrzl4apc.knight-bite.com/main/res/index/ios-store.svg);
     background-repeat: no-repeat;
-    transform: scale(1);
 }
 
 .android-store {
@@ -119,54 +104,44 @@ a:link{
     height: 70px;
     background: url(https://nrzl4apc.knight-bite.com/main/res/index/google-play-badge.svg);
     background-repeat: no-repeat;
-    transform: scale(1.2);
 }
 
 .ios-store, .android-store {
-    transition: all 0.5s;
     margin: 0 30px;
-    animation-fill-mode: forwards;
 }
 
 .features {
-    margin-top: 70px;
-    height: fit-content;
+    width: 1500px;
+    margin: 70px auto 0;
 }
 
 .features>h1 {
     color: #424242;
     font-size: 55px;
-    font-weight: 700;
     text-align: center;
 }
 
 h1 {
     display: block;
     font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    unicode-bidi: isolate;
 }
 
 .features-grid {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: center;
-    margin: 100px 50px;
+    justify-content: flex-start;
+    gap: 55px;
+    width: 1400px;
+    margin: 100px auto;
 }
 
 .feature-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 img {
-    overflow-clip-margin: content-box;
-    overflow: clip;
+    display: block;
 }
 
 .feature-description {
@@ -174,28 +149,25 @@ img {
     color: #424242;
     font-size: 20px;
     text-align: center;
-    width: 190px;
+    width: 210px;
     text-transform: capitalize;
 }
 
 .banner-1 {
     text-align: center;
     display: flex;
-    background-repeat: no-repeat;
-    background-position: left;
     background: url(https://nrzl4apc.knight-bite.com/main/res/index/banner-1.webp);
     background-size: cover;
-    height: 1050px;
+    width: 1500px;
+    height: 900px;
 }
 
 .banner-1>h3 {
     color: white;
-    width: 1268px;
     margin: 0 auto;
     align-self: center;
     justify-self: center;
     text-align: center;
-    font-family: 'nicotineregular';
     font-size: 6em;
     text-transform: uppercase;
 }
@@ -203,44 +175,26 @@ img {
 .banner-2 {
     display: flex;
     flex-direction: column;
-    background-repeat: no-repeat;
-    background-position: left;
     background: url(https://nrzl4apc.knight-bite.com/main/res/index/banner-2.webp);
     background-size: cover;
-    width: 100%;
-    height: 100vh;
-}
-
-element.style {
-    margin-bottom: auto;
+    width: 1500px;
+    height: 900px;
 }
 
 .banner-2>h3 {
-    padding: 0 10px;
-    font-size: 3em;
-    width: fit-content;
-    opacity: 1;
     text-align: center;
     margin: auto;
     color: white;
-    width: 1268px;
-    font-family: 'nicotineregular';
     font-size: 6em;
     text-transform: uppercase;
 }
 
 .menu-btn {
-    width: 200px;
-    border: 1.5px solid white;
-    padding: 7px;
-    font-size: 21px;
-    margin: 0 auto 100px;
     width: 250px;
-    border: 1.3px solid white;
-    outline: none;
+    border: 1px solid white;
+    padding: 8px;
+    margin: 0 auto 100px;
     background: none;
-    padding: 7px;
-    font-weight: 600;
     font-size: 30px;
     color: white;
     border-radius: 50px;
@@ -249,13 +203,14 @@ element.style {
 
 .footer {
     padding-top: 50px;
+    width: 1500px;
+    margin: 0 auto;
 }
 
 .footer>h1 {
     margin-bottom: 40px;
     color: #424242;
     font-size: 55px;
-    font-weight: 700;
     text-align: center;
 }
 
@@ -263,19 +218,15 @@ element.style {
     margin-bottom: 40px;
     color: #424242;
     font-size: 30px;
-    font-weight: 700;
 }
 
 .footer-details {
     display: grid;
-    margin: 40px 50px;
-    grid-template-columns: repeat(2, 1fr) 2fr;
-    justify-content: space-around;
-    align-items: stretch;
-    font-family: Nunito;
-    font-style: normal;
+    width: 1300px;
+    margin: 40px auto;
+    grid-template-columns: 300px 300px 1fr;
     column-gap: 20px;
-    font-weight: 300;
+    row-gap: 30px;
     font-size: 20px;
     color: #424242;
 }
@@ -288,7 +239,6 @@ element.style {
 }
 
 .footer-item li {
-    width: fit-content;
     padding: 10px 5px;
     list-style-position: inside;
     cursor: pointer;
@@ -307,10 +257,12 @@ element.style {
 .copyright {
     display: flex;
     align-items: center;
+    justify-content: center;
     background: linear-gradient(90deg, #C77BF4 0%, #FF5672 100%);
     box-shadow: -5px -5px 19px rgba(0, 0, 0, 0.23);
     height: 50px;
-    width: 100%;
+    width: 1500px;
+    margin: 0 auto;
     color: white;
     font-size: 15px;
 }
@@ -346,7 +298,7 @@ element.style {
 
 .email-container {
     position: relative;
-    width: fit-content;
+    width: 500px;
 }
 
 .email-btn {
@@ -361,19 +313,10 @@ element.style {
     outline: none;
     background: url("https://nrzl4apc.knight-bite.com/main/res/index/email-btn.svg");
     background-position: center;
-    transition: all 0.5s;
-}
-
-.email-btn:hover {
-    transform: scale(1.05);
 }
 
 .profile-tags img {
-    transition: all 0.3s ease-out;
-}
-
-.profile-tags img:hover {
-    transform: scale(1.1);
+    display: block;
 }
 
 .copyright {
@@ -383,7 +326,16 @@ element.style {
     background: linear-gradient(90deg, #C77BF4 0%, #FF5672 100%);
     box-shadow: -5px -5px 19px rgba(0, 0, 0, 0.23);
     height: 50px;
-    width: 100%;
+    width: 1500px;
+    margin: 0 auto;
     color: white;
     font-size: 15px;
+}
+
+html,
+body {
+    width: 1500px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    background: #fff;
 }
