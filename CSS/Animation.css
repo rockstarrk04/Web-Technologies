@@ -1,0 +1,167 @@
+.box1{
+    border: solid 1px black;
+    height: 200px;
+    width: 200px;
+    background: black;
+    margin: 5vh auto;
+   
+
+    animation-name: changecolor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    /* animation-delay: 3s;      Affects only the initial time */
+
+}
+
+/* If only two transition required use from to method */
+/* @keyframes changecolor {
+    from{
+        background: red;
+        
+    }
+    to{
+        background: lightgreen;
+        border-radius: 50%;
+    }
+} */
+
+
+/* If more than two transition required use % method (0% - 100%) */
+@keyframes changecolor {
+    0%{
+        background: red;
+    }
+    50%{
+        background: blue;
+        border-radius: 50%;
+    }
+    100%{
+        background: red;
+    }
+}
+
+.box2{
+    border: solid 1px black;
+    height: 200px;
+    width: 200px;
+    background: blueviolet;
+    margin: 5vh auto;
+
+    animation: rotating 5s infinite linear;
+}
+
+@keyframes rotating {
+
+    50%{
+        background: yellow;
+        transform: rotate(360deg);
+    }
+
+}
+
+.box3{
+    border: solid 1px black;
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(red, blue, green, lightblue);
+    margin: 5vh auto;
+
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    50%{
+        background: black;
+        transform: rotate(5turn) scale(0);
+    }
+}
+
+.heart{
+    text-align: center;
+    font-size: 300px;
+    animation-name: heart;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes heart {
+    50%{
+        transform:scale(0.9);
+    }
+}
+
+.circle{
+    height: 200px;
+    width: 200px;
+    border: solid 1px black;
+    background: repeating-conic-gradient(red,green, yellow 20%);
+    margin: 10vh auto;
+    border-radius: 50%;
+
+    animation: loadAnime 5s infinite linear;
+}
+
+@keyframes loadAnime {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.b-circle{
+    height: 200px;
+    width: 200px;
+    background: repeating-conic-gradient(rgb(39, 177, 223), white );
+    margin: 10vh auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: loadAnime1 2s infinite linear reverse;
+}
+
+.n-cirlce{
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    background: white;
+    
+}
+
+@keyframes loadAnime1 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.pause-btn{
+    width: 0;
+    height: 0;
+    border-left: 100px solid red;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-top: 100px solid transparent;
+
+    animation: triangle 5s infinite linear;
+}
+
+.container{
+    display: flex;
+}
+@keyframes triangle {
+    0% , 100%{
+        margin-left: 0%;
+    }
+    50%{
+        margin-left: 80%;
+    }
+}
