@@ -8,6 +8,7 @@ a:link {
     text-decoration: none;
 }
 
+
 body {
     background: #F5F5F5;
 }
@@ -17,6 +18,7 @@ input#nav-icon {
 }
 
 .appbar {
+    zoom: 0.8;
     z-index: 2;
     position: fixed;
     top: 0;
@@ -25,76 +27,55 @@ input#nav-icon {
     background: rgba(0, 0, 0, 0.12);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 100px;
 }
 
 .logo {
-    margin: 0;
+    margin: 0 100px;
     width: 150px;
     height: 90px;
     background: url('https://nrzl4apc.knight-bite.com/main/res/brand-logo.svg');
     background-repeat: no-repeat;
     background-size: 150px 90px;
     cursor: pointer;
-    flex-shrink: 0;
 }
 
 .nav {
     margin-left: auto;
-    margin-right: 0;
-}
+    margin-right: 100px;
+    transition: all 0.5s;
 
-.nav ul {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 .nav li {
     display: inline-block;
-    margin: 0;
+    margin: 0 20px;
     list-style: none;
     list-style-position: inside;
 }
 
 .nav a {
-    display: inline-flex;
-    align-items: center;
     text-decoration: none;
     font-size: 22px;
     color: rgba(255, 255, 255, 0.781);
     font-weight: 300;
 }
 
+
 .nav-icon {
     display: none;
 }
 
-.download-btn {
-    background: #FF5672;
-    padding: 10px 20px;
-    width: 195px;
-    color: white;
-    font-size: 19px;
-    font-weight: 700;
-    border-radius: 40px;
+.link {
+    transition: all 0.5s;
 }
 
 .link:hover {
     color: #C77BF4;
 }
 
-.dnone {
-    display: none;
-}
-
 .app-link {
     width: 100%;
-    height: 100vh;
+    height: 900px;
     background: url('https://nrzl4apc.knight-bite.com/main/res/index/app-link-background.svg');
     background-size: cover;
     text-align: center;
@@ -103,10 +84,12 @@ input#nav-icon {
 
 .app-link>h3 {
     color: white;
-    padding-top: 40vh;
+    font-family: 'nicotineregular';
+    padding-top: 360px;
     font-size: 5em;
     white-space: nowrap;
     overflow: hidden;
+    transition: all .4s;
     text-transform: uppercase;
     letter-spacing: 1.5px;
 }
@@ -122,7 +105,9 @@ input#nav-icon {
 
 .ios-store,
 .android-store {
+    transition: all 0.5s;
     margin: 0 30px;
+    animation-fill-mode: forwards;
 }
 
 .ios-store {
@@ -151,10 +136,10 @@ input#nav-icon {
 
 .features {
     margin-top: 70px;
+    height: fit-content;
 }
 
-.features>h1,
-.features-header {
+.features>h1 {
     color: #424242;
     font-size: 55px;
     font-weight: 700;
@@ -163,13 +148,10 @@ input#nav-icon {
 
 .features-grid {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-evenly;
     align-content: center;
-    margin: 100px auto;
-    max-width: 1200px;
-    padding: 0 20px;
-    box-sizing: border-box;
+    margin: 100px 50px;
 }
 
 .feature-container {
@@ -180,13 +162,12 @@ input#nav-icon {
 
 .feature-description {
     margin: 40px 0;
+    /* color: #424242; */
     color: #424242;
     font-size: 20px;
     text-align: center;
-    width: 100%;
-    max-width: 220px;
+    width: 190px;
     text-transform: capitalize;
-    box-sizing: border-box;
 }
 
 .banner-1 {
@@ -205,43 +186,38 @@ input#nav-icon {
     text-align: center;
     display: flex;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
 }
 
 
 .banner-1>h3 {
     color: white;
-    width: 100%;
-    max-width: 1268px;
+    width: 1268px;
     margin: 0 auto;
     align-self: center;
+    justify-self: center;
     text-align: center;
-    font-size: clamp(2.5rem, 6vw, 6rem);
+    font-family: 'nicotineregular';
+    font-size: 6em;
     text-transform: uppercase;
-    padding: 0 20px;
-    box-sizing: border-box;
 }
 
 .banner-2 {
     display: flex;
     flex-direction: column;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
 }
 
 .banner-2>h3 {
     text-align: center;
     margin: auto;
     color: white;
-    width: 100%;
-    max-width: 1268px;
-    font-size: clamp(2.5rem, 6vw, 6rem);
+    width: 1268px;
+    font-family: 'nicotineregular';
+    font-size: 6em;
     text-transform: uppercase;
-    padding: 0 20px;
-    box-sizing: border-box;
 }
-
-/* .menu-btn removed (unused) */
 
 /* footer style */
 
@@ -270,6 +246,7 @@ input#nav-icon {
     grid-template-columns: repeat(2, 1fr) 2fr;
     justify-content: space-around;
     align-items: stretch;
+    font-family: Nunito;
     font-style: normal;
     column-gap: 20px;
     font-weight: 300;
@@ -293,6 +270,17 @@ input#nav-icon {
 
 .footer-link {
     color: #FF5672;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #C77BF4 0%, #FF5672 100%);
+    box-shadow: -5px -5px 19px rgba(0, 0, 0, 0.23);
+    height: 50px;
+    width: 100%;
+    color: white;
+    font-size: 15px;
 }
 
 .footer-mail {
@@ -327,25 +315,6 @@ input#nav-icon {
 .email-container {
     position: relative;
     width: fit-content;
-}
-
-.email-btn {
-    position: absolute;
-    right: -1px;
-    bottom: 0;
-    height: 75px;
-    border-radius: 50px;
-    width: 75px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background: url("https://nrzl4apc.knight-bite.com/main/res/index/email-btn.svg");
-    background-position: center;
-    transition: all 0.5s;
-}
-
-.email-btn:hover {
-    transform: scale(1.05);
 }
 
 .profile-tags img {

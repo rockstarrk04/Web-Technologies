@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+body {
+    background: #F5F5F5;
+    min-width: 1440px;
+}
+
+input#nav-icon {
+    display: none;
+}
+
+
+.appbar {
+    zoom: 0.8;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 140px;
+    background: rgba(0, 0, 0, 0.12);
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin: 0 100px;
+    width: 150px;
+    height: 90px;
+    background: url('https://nrzl4apc.knight-bite.com/main/res/brand-logo.svg');
+    background-repeat: no-repeat;
+    background-size: 150px 90px;
+    cursor: pointer;
+}
+
+.nav {
+    margin-left: auto;
+    margin-right: 100px;
+    transition: all 0.5s;
+
+}
+
+.nav li {
+    display: inline-block;
+    margin: 0 20px;
+    list-style: none;
+    list-style-position: inside;
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.781);
+    font-weight: 300;
+}
+
+
+.nav-icon {
+    display: none;
+}
+
+.link {
+    transition: all 0.5s;
+}
+
+.link:hover {
+    color: #C77BF4;
+}
+
+.content {
+    height: 900px;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background: url('https://nrzl4apc.knight-bite.com/main/res/menu/banner.webp');
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.menu {
+    display: grid;
+    margin-top: 100px;
+    padding: 0 200px;
+    row-gap: 60px;
+    column-gap: 50px;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    filter: brightness(70%)
+}
+
+.menu-item h1 {
+    color: white;
+    font-size: 40px;
+    font-family: 'nicotineregular';
+    margin: 0 0 15px 0;
+}
+
+.menu-item img:last-of-type {
+    height: 30px;
+    width: 30px;
+}
+
+.menu-item img:first-of-type {
+    height: 140px;
+}
+
+
+.menu-item:nth-child(5) img:first-of-type {
+    transform: scale(0.7);
+}
+
+.menu-item:nth-child(6) img:first-of-type {
+    transform: scale(0.5);
+}
+
+.category-details {
+    position: relative;
+    position: fixed;
+    width: 1080px;
+    height: 675px;
+    background: white;
+    margin: 180px 180px;
+    top: 0;
+    z-index: 3;
+    border-radius: 15px;
+    display: none;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+}
+
+.category-img {
+    width: 40%;
+    height: 100%;
+    background: white;
+    background-size: cover !important;
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+}
+
+.category-items-list {
+    width: 80%;
+    height: 100%;
+    background: #F5F5F5;
+    overflow-y: scroll;
+}
+
+
+.category-items-list::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    height: 0%;
+    margin-right: 50px;
+    background-color: #ffffff;
+}
+
+.category-items-list::-webkit-scrollbar {
+    width: 15px;
+    background-color: #C4C4C4;
+}
+
+.category-items-list::-webkit-scrollbar-thumb {
+    background-color: #C4C4C4;
+    border: 2px solid #000000;
+    height: 80%;
+}
+
+.main-header {
+    margin: 30px 0 0 50px;
+}
+
+.category-container {
+    padding: 25px 0 0 50px;
+}
+
+.main-header {
+    font-weight: 700;
+    font-size: 65px;
+    color: #424242;
+}
+
+.category-container h3 {
+    font-weight: 700;
+    font-size: 36px;
+    color: #424242;
+    width: 80%;
+    padding: 15px 0;
+    background: #F5F5F5;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 0;
+}
+
+.item-container {
+    display: flex;
+    margin-left: 30px;
+    font-weight: 300;
+    font-size: 21px;
+    color: #4242429c;
+}
+
+.item-container span:first-of-type {
+    font-weight: 400;
+    color: #424242;
+    margin-right: 50px;
+}
+
+.item-container span {
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+
+.item-container:last-child {
+    margin-bottom: 50px;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #C77BF4 0%, #FF5672 100%);
+    box-shadow: -5px -5px 19px rgba(0, 0, 0, 0.23);
+    height: 50px;
+    width: 100%;
+    color: white;
+    font-size: 15px;
+}
