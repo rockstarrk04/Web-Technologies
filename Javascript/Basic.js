@@ -11,7 +11,7 @@
 // output : Welcome to Javascript class
 
 
-// here below , document.write() allows css inside it's string and let it to be executed
+// here below , document.write() allows html and css inside it's string and let it to be executed
 document.write("<br>")
 document.write("I'm in External Javascript")
 document.write('<h3 style = color:red >Welcome to JS</h3>')
