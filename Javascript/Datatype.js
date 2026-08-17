@@ -141,3 +141,22 @@ console.warn(`default value of in-built method`);
 console.log(Number()); // 0
 console.log(String()); // ''
 console.log(Boolean()); // false
+
+
+console.error(``);
+
+let one = '1';
+console.log(one);  // 1
+console.log(typeof(one));  // string
+
+let num1 = Number(one) // ==> 1
+console.log(num1); // 1
+console.log(typeof(num1));  // number
+
+let num2 = Boolean(num1);
+console.log(num2);  // true
+console.log(typeof(num2));  // boolean
+
+
+
+
