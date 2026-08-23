@@ -7,7 +7,7 @@ let age = 25
 // console.log(fname+ ' ' + lname + ' ' + 'age is ' + age + '.');
 // console.log(fname,lname,'age is',age,'.');
 
-
+// String Interpolation
 console.warn(`String Interpolation`);
 
 console.log(`${fname} ${lname} age is ${age}.` );
