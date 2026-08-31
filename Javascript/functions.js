@@ -354,7 +354,7 @@ let arr1 = () => console.log("Welcome");
 
 
 // ======================================================
-console.warn("Self invoking Function");
+// console.warn("Self invoking Function");
 
 //! Self invoking Function / Immediate Invoking Function
 // ? Self invoking Function - using general function
@@ -403,3 +403,103 @@ let returnValue = (function (a , b){
 // ? Shortform of above code using special behaviour of arrow function
 
 // console.log((num => num % 2 == 0 ? `${num} is Even` : `${num} is Odd`) (21));
+
+
+//? =====================================================================
+
+// ! Callback Function
+// ? A function we can create or we can call as a argument of another function is called callback function
+// ! Higher Order Function
+// ? Accepting the callback function as a parameter that function is called Higher Order function.
+
+
+console.warn("Callback Function");
+// todo : Example 1
+// let num1 = () =>{
+//     return 100
+// }
+
+// let sum = (a , b) =>{
+//     let res = a + b
+//     console.log(res);
+// }
+// sum (num1() , 200)
+// ? Here , in above example , num1 is CBF and sum is HOF
+
+// todo : Example 2
+// let num1 = () =>{
+//     return 100
+// }
+
+// let sum = (a , b) =>{
+//     let res = a() + b
+//     console.log(res);
+// }
+// sum (num1 , 200)
+// ? Here , in above example , num1 is CBF and sum is HOF.
+
+// todo : Example 3
+// let sum = (a , b) =>{
+//     let res = a() + b
+//     console.log(res);
+// }
+// sum (() => 2500 , 2000)
+// ? Here, in above example, 'a' is CBF and sum is HOF.
+
+// todo : Example 4
+
+// let sName = () =>{
+//     return "Khan"
+// }
+
+// let userName = (fname , sname) => {
+//     let name = `My name is ${fname} ${sname()}`
+//     console.log(name);
+// }
+// userName("Salman" , sName)
+// userName("Sharukh" , sName)
+// ? Here , in above example , 'sName' is CBF and userName is HOF.
+
+// todo : Example 5
+
+// let value1 = (callback) => {
+//     let add = 100 + callback()
+//     console.log(add);
+
+//     let multiplication = 100 * callback()
+//     console.log(multiplication);
+// }
+
+// value1(() => { return 100 })
+// ? Here , in above example , 'callback' is CBF and value1 is HOF
+
+// ! Higher Order Function
+console.warn("Higher Order Function");
+
+
+let hof = (callback) => {
+    let add = 100 + callback()
+    console.log(add);
+
+    let multiplication = 100 * callback()
+    console.log(multiplication);
+}
+
+hof(() => { return 100 })
+
+// ? Here , in above example , 'callback' is CBF and 'hof' is HOF.
+
+
+//! Timing Function
+// ? setTimeout is a function used to delay the function's execution.
+// ? Syntax : 
+    // setTimeout(CBF , timer)
+
+//  todo : Example for setTimeout()
+setTimeout( () => {
+    console.log("Helooooo");
+}, 5000)
+
+//! NOTE :     
+    // ? Here in above example, setTimeout is HOF and handler is CBF
+    // ? Here, in this example , the function will execute after 3 seconds.
