@@ -271,3 +271,135 @@ function factorial(num){
 }
 
 // factorial(5)
+
+
+// console.warn("Anonymous Function");
+
+// todo : Function without parameter and without return statement
+let a = function(){
+    console.log("This is my first example");
+}
+// a()
+
+
+// todo : Function with parameter and without return statement
+let b = function(a,b){
+    let res = a+b
+    console.log(`${a} + ${b} = ${a+b}`);
+}
+// b(10,20)
+
+// todo :  Function without parameter and with return statement
+let c = function(){
+    let a = 10
+    let b= 20
+    return a+b;
+}
+res = c()
+// console.log(res);
+
+
+// todo :  Function with parameter and with return statement
+let d = function(a,b,c){
+    return a+b+c
+}
+res = d(10,20,30)
+// console.log(res);
+
+
+// ====================================================
+// console.warn("Arrow Function");
+
+
+// todo :  Function without parameter and without return statement
+let Arrow1 = () => {
+    console.log("Hello");
+}
+// Arrow1()
+
+// todo :  Function with parameter and without return statement
+let Arrow2 = (a,b) => {
+    let val = a + b
+    console.log(res);
+}
+// Arrow2(10,20)
+
+// todo :  Function without parameter and with return statement
+let Arrow3 = (a,b) => {
+    return a+b
+}
+let val = Arrow3(10,50)
+// console.log(val);
+
+// todo :  Function with parameter and with return statement
+let Arrow4 = (a,b,c) => {
+    return a+b+c
+}
+let value = Arrow4(10,50,10)
+// console.log(value);
+
+
+let arrowEvenOdd = (number) => {
+    return (number%2 == 0) ? `${number} is Even` : `${number} is odd` ;
+}
+// console.log(arrowEvenOdd(100));
+
+// =========================================
+
+// ! Special behaviour of Arrow function
+// todo : Example 1 - In arrow function , if we have only one line statement , then curly braces is optional
+let arr1 = () => console.log("Welcome");
+// arr1()
+
+
+
+// ======================================================
+console.warn("Self invoking Function");
+
+//! Self invoking Function / Immediate Invoking Function
+// ? Self invoking Function - using general function
+// (function Self(){
+//     console.log("Hello SIF , using general function");
+// }) ()
+
+//? (or)  
+
+// (function Self(){
+//     console.log("Hello SIF , using general function");
+// }() ) 
+
+
+// ? Self invoking Function - using anonymous function
+// (function (){
+//     console.log("Hello SIF , using anonymous function");
+// }) ()
+
+// ? (or)
+
+// (function (){
+//     console.log("Hello SIF , using anonymous function");
+// } () ) 
+
+// ? Self invoking Function - using arrow function
+// (() => {
+//     console.log("Hello SIF , using arrow function");
+// }) ()
+
+
+// todo : Example program 1 : SIF with parameter and return statement
+
+let returnValue = (function (a , b){
+    let res = a + b
+    return (`${a} + ${b} = ${res}`);
+}) (10 , 30)
+
+// console.log(returnValue);
+
+// res = ((num) => {
+//     return num % 2 == 0 ? `${num} is Even` : `${num} is Odd` ;
+// }) (21)
+// console.log(res);
+
+// ? Shortform of above code using special behaviour of arrow function
+
+// console.log((num => num % 2 == 0 ? `${num} is Even` : `${num} is Odd`) (21));
