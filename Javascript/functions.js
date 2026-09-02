@@ -325,10 +325,12 @@ let Arrow2 = (a,b) => {
 // Arrow2(10,20)
 
 // todo :  Function without parameter and with return statement
-let Arrow3 = (a,b) => {
+let Arrow3 = () => {
+    let a = 10;
+    let b = 20;
     return a+b
 }
-let val = Arrow3(10,50)
+let val = Arrow3()
 // console.log(val);
 
 // todo :  Function with parameter and with return statement
@@ -350,7 +352,6 @@ let arrowEvenOdd = (number) => {
 // todo : Example 1 - In arrow function , if we have only one line statement , then curly braces is optional
 let arr1 = () => console.log("Welcome");
 // arr1()
-
 
 
 // ======================================================
