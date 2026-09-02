@@ -496,10 +496,21 @@ hof(() => { return 100 })
     // setTimeout(CBF , timer)
 
 //  todo : Example for setTimeout()
-setTimeout( () => {
-    console.log("Helooooo");
-}, 5000)
+// setTimeout( () => {
+//     console.log("Helooooo");
+// }, 5000)
 
 //! NOTE :     
     // ? Here in above example, setTimeout is HOF and handler is CBF
     // ? Here, in this example , the function will execute after 3 seconds.
+
+
+// ! Nested Function
+
+function outer() {
+    function inner() {
+        console.log("Hello");
+    }
+    inner()
+}
+outer()
