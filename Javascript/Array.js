@@ -284,8 +284,159 @@ console.warn("Arrays");
 
 // todo : concat() : It is used to 
 
-let arr1 = [1,2,3]
-let arr2 = [['a','b'],"XYZ"]
-console.log(arr1.concat(arr2));   //*  other method to concatenate: console.log([arr1 , arr2]);
-//*  [1, 2, 3, Array(2), 'XYZ']
-console.log(arr1.concat(arr2).flat());    //? [1, 2, 3, 'a', 'b', 'XYZ']
+// let arr1 = [1,2,3]
+// let arr2 = [['a','b'],"XYZ"]
+// console.log(arr1.concat(arr2));   //*  other method to concatenate: console.log([arr1 , arr2]);
+// //*  [1, 2, 3, Array(2), 'XYZ']
+// console.log(arr1.concat(arr2).flat());    //? [1, 2, 3, 'a', 'b', 'XYZ']
+
+// *======|06-09-2026| ==============================================================
+
+//! Important Methods
+// todo : for loop , for-in , for-of
+// let arr = [10,15,20,25,30]
+// console.log(arr);
+
+// console.warn("Using for loop");
+// for(let i=0; i<arr.length; i++){
+//     console.log(i);
+//     console.log(arr[i]);
+// }
+
+// console.warn("Using for-in loop");
+/* 
+NOTE : where ever we can access the index value , then by default we can access its respective array elements 
+*/
+
+// for(let index in arr){
+//     // console.log(index);    //? index --> 0,1,2,3,4
+//     // console.log(arr[index]);   //? elements --> 10,15,20,25,30
+// }
+
+// console.warn("Using for-of loop");
+// for(let element of arr){
+//     console.log(element)   //? elements --> 10,15,20,25,30
+// }
+
+
+
+// todo : forEach loop
+// console.warn("Using for loop");
+// for(let i=0; i<arr.length; i++){
+//     console.log(i);
+//     console.log(arr[i]);
+//     console.log(arr);
+// }
+
+// console.warn("Using for each Loop");
+
+// arr.forEach((element , index , array) => {
+//     console.log(element);
+//     console.log(index);
+//     console.log(array);
+// })
+
+
+// todo : Example program - difference btwn for loop and forEach loop
+// console.warn('Using for loop');
+// let arr = [7,6,5,4,3]
+// new_Arr = []
+// for (let i = 0; i< arr.length; i++){
+//     new_Arr[new_Arr.length] = arr[i] + 2
+// }
+// console.log(new_Arr);
+
+
+// console.warn("Using forEach loop");
+// let arr = [7,6,5,4,3]
+// new_Arr = []
+// arr.forEach((element) => {
+//     new_Arr[new_Arr.length] = element+2 
+// })
+// console.log(new_Arr);
+
+// console.warn("Using for-in loop");
+// let arr = [7,6,5,4,3]
+// new_Arr = []
+// for(let index in arr){
+//     new_Arr[new_Arr.length] = arr[index] + 2
+// }
+// console.log(new_Arr);
+
+
+// console.warn("Using for-of loop");
+// let arr = [7,6,5,4,3]
+// new_Arr = []
+// for(let element of arr){
+//     new_Arr[new_Arr.length] = element+ 2
+// }
+// console.log(new_Arr);
+
+// todo : map() --> It is used to do common operation for all array elements and 
+//              it returns the modified array
+
+// console.warn("Using map()");
+// let arr = [7,6,5,4,3]
+// // let res = arr.map((element) => {
+// //     return element+2
+// // })
+
+// console.log(arr.map(element => element+2));
+
+
+//! Task  : Converts the original array's each element to uppercase and store in new array and print that array
+// todo : Using for loop
+// console.warn("Using for loop");
+// let fruit = ["Apple" , "Mango" , "Banana" , "Orange" , "Grapes"]
+// let new_Arr = []
+// for (let i = 0; i < fruit.length ; i++){
+//     new_Arr[new_Arr.length] = fruit[i].toUpperCase()
+// }
+// console.log(new_Arr);
+
+// todo : Using for-in loop
+// console.warn("Using for-in loop");
+// let fruit = ["Apple" , "Mango" , "Banana" , "Orange" , "Grapes"]
+// let new_Arr = []
+// for (let index in fruit){
+//     new_Arr[new_Arr.length] = fruit[index].toUpperCase()
+// }
+// console.log(new_Arr);
+
+// todo : Using for-of Loop
+// console.warn("Using for-of loop");
+// let fruit = ["Apple" , "Mango" , "Banana" , "Orange" , "Grapes"]
+// let new_Arr = []
+// for (let element of fruit){
+//     new_Arr[new_Arr.length] = element.toUpperCase()
+// }
+// console.log(new_Arr);
+
+// todo : Using forEach loop`
+// console.warn("Using forEach loop");
+// let fruit = ["Apple" , "Mango" , "Banana" , "Orange" , "Grapes"]
+// let new_Arr = []
+// fruit.forEach((element) => {
+//     new_Arr[new_Arr.length] = element.toUpperCase()
+// })
+// console.log(new_Arr);
+
+// todo : Using map()
+// console.warn("Using map()");
+// let fruit = ["Apple" , "Mango" , "Banana" , "Orange" , "Grapes"]
+// console.log(fruit.map(element => element.toUpperCase()));
+
+
+// todo : Using filter()
+// let arr = [7,6,5,4,3]
+// console.log(arr);   //? [7,6,5,4,3]
+// console.log(arr.filter(element => element%2 == 1));
+
+
+// task 2 : Print fruits name whose name ending with 'e'
+// let fruit = ["Apple" , "Mango" , "Banana" , "Orange" , "Grapes"]
+// let e = fruit.filter((element) => {
+//     return element.endsWith('e')
+// })
+// // console.log(e);
+// console.log(fruit.filter(element =>element.endsWith('e')));
