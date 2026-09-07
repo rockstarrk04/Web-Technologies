@@ -543,3 +543,21 @@ NOTE :
 // let arr = [10,20,30,40,50,60]
 // console.log(arr); 
 // console.log(arr.findIndex(element => element > 25));
+
+//! Array programs
+
+// todo : Find largest number in array
+// let arr = [45 , 575 , 65 , 4 , 89 , 87 , 87 , 20 , 35 , 400 , 57]
+// console.log(arr.sort((a, b) => b - a).at(0));
+// console.log(arr.sort((a, b) => b - a)[0]);
+// console.log(arr.reduce((a,b) => a > b ? a : b ));
+
+// todo : reverse a string
+
+// let str = "hello"
+// console.log(str);
+// console.log(str.split('').reverse().join(''));
+
+// let str = "eye";
+// let rev = str.split('').reverse().join('');
+// (str === rev) ? console.log(`${str} is palindrome`) : console.log(`${str} is not a palindrome`);
