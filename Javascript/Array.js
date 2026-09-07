@@ -1,6 +1,6 @@
 console.warn("Arrays");
-//   Basic of Arrays
 
+// todo : Basic of Arrays
 // let arr = [100 , 'hi' , true , 10.234 , undefined , [10,203,40]];
 // console.log(arr);   // [100, 'hi', true, 10.234, undefined, Array(3)]
 // console.log(typeof arr);    // object
@@ -440,3 +440,106 @@ NOTE : where ever we can access the index value , then by default we can access 
 // })
 // // console.log(e);
 // console.log(fruit.filter(element =>element.endsWith('e')));
+
+// *======= 07-09-26 ================================================================
+
+//!  Using reduce()
+/* Syntax : 
+            array.reduce((accumulator , currentValue , index , array) => {
+                return result
+            } , initialValue)   
+
+NOTE :
+--> Accumulator = A variable that stores and keeps updating the result while processing elements one by one.
+--> currentValue = current array element
+--> index = index of current array element
+--> array = original array
+--> initialValue  = Initial Value of accumulator 
+
+*/
+
+// todo : Sum of all array elements 
+// let arr = [4,2,3,5,7]
+// console.log(arr);
+// let res = arr.reduce((preVal , curVal) => {
+//     // let sum = preVal + curVal
+//     // console.log(`${preVal} + ${curVal} = ${sum}`);
+//     // return sum
+//     return preVal + curVal
+// })
+// console.log(res);
+
+
+// todo : Multiple of all array elements 
+// let arr = [4,2,3,5,7]
+// console.log(arr);
+// let res = arr.reduce((preVal , curVal) => {
+//     return preVal * curVal
+// } , 1)
+// console.log(res);
+
+// ? Using sort() : It is used to sort the array element in ascending or descending order , And it return the sorter array 
+
+// let arr = [9,1,8,2,3,7,4,6,5]
+// console.log(arr);
+//? Sorting in ascending order
+// console.log(arr.sort());
+//? Sorting in descending order
+// console.log(arr.sort().reverse());
+
+//! Here , sorting in done based on only the starting digit of the number
+// let arr = [932,121,821,82,332,7,314,6,35,911,888,23,27]
+// console.log(arr);
+//? Sorting in ascending order
+// console.log(arr.sort());
+//? Sorting in descending order
+// console.log(arr.sort().reverse());
+
+
+//! Proper ascending sorting 
+//? Sorting in ascending order
+// let arr = [932,121,821,82,332,7,314,6,35,911,888,23,27]
+// console.log(arr);
+// let x = arr.sort((a , b) => {
+//     return a - b
+// })
+// console.log(x);
+
+
+//! Proper descending sorting 
+//? Sorting in descending order
+// let arr = [932,121,821,82,332,7,314,6,35,911,888,23,27]
+// console.log(arr);
+// let x = arr.sort((a , b) => {
+//     return b - a
+// })
+// console.log(x);
+
+
+// todo: find() : It is used to print/find/display first matching array element based on the condition.
+
+// let arr = [10,20,30,40,50,60]
+// console.log(arr);
+// let res = arr.find((element , index) => {
+//     return element > 25
+// })
+// console.log(res);
+
+// ? Using special behaviour of arraow function
+// let arr = [10,20,30,40,50,60]
+// console.log(arr);
+// console.log(arr.find((element , index) => element > 25));
+
+// todo : findIndex() : It is used to find index of 1st matching array element based on the condition.
+
+// let arr = [10,20,30,40,50,60]
+// console.log(arr);
+// let index = arr.findIndex( (element) => {
+//     return element > 25
+// })
+// console.log(index);
+
+// ? Using special behaviour of arrow function
+// let arr = [10,20,30,40,50,60]
+// console.log(arr); 
+// console.log(arr.findIndex(element => element > 25));
