@@ -102,16 +102,16 @@
 
 
 //! Nested Object
-let person = {
-    fname : "Dinga",
-    lname : "Raja",
-    age : 26,
-    address : {
-        houseNo : 1234,
-        city : "Goa",
-        pincode : 123456
-    }
-}
+// let person = {
+//     fname : "Dinga",
+//     lname : "Raja",
+//     age : 26,
+//     address : {
+//         houseNo : 1234,
+//         city : "Goa",
+//         pincode : 123456
+//     }
+// }
 
 //? accessing property using dot operator
 // console.log(person);
@@ -123,3 +123,155 @@ let person = {
 // console.log(person["address"]);
 // console.log(person["address"]["city"]);
 // console.log(`${person["fname"]} is from ${person["address"]["city"]}`);
+
+// =========================================================================
+
+// *10-09-2026
+
+// NOTE : traditional way of creating methods in objects
+//! Creation of method inside object
+// todo: Function inside object
+
+// let demo = {
+//     text : function() {            // anonymous function
+//         console.log("Hello");
+//     }
+// }
+
+// demo.text()
+
+// todo : Function with parameter in a object
+
+// let display = {
+//     text : function(name){
+//         console.log(`Hello ${name}`);
+//     }
+// }
+// display.text("Ram")
+
+// let con = {
+//     lg : function(text){
+//         console.log(`${text}`);
+//     }
+// }
+// con.lg("Welcome");
+// console.log("Welcome");
+
+
+// todo : function with paramter and return statement in object
+
+// let number = {
+//     add : function (a,b){
+//         return `${a} + ${b} = ${a + b}`
+//     }
+// }
+// let res = number.add(10,20);
+// console.log(res);
+// console.log(number.add(100,200));
+
+// todo : multiple function with paramter and return statement in object
+// let number = {
+//     add : function (a,b){
+//         return `${a} + ${b} = ${a + b}`
+//     },
+
+//     multiplication : function(a,b){
+//         return `${a} * ${b} = ${a * b}`
+//     },
+
+//     checkEvenOrOdd : function(num) {
+//         return (num % 2 == 0) ? `${num} is Even` : `${num} is Odd`
+//     },
+
+//     power : function(a,b) {
+//         return `${a} ^ ${b} = ${a**b} `
+//     },
+
+//     factorial : function(num) {
+//         fact = 1
+//         if (num == 0 || num == 1){
+//             return `fact of ${num} is 1`
+//         }
+//         else{
+//             fact = 1
+//             for (let i = 1 ; i <= num ; i++){
+//                 fact *= i
+//             }
+//             return `Fact of ${num} is ${fact}`
+//         }
+//     }
+// }
+
+// console.log(number.add(100,200));
+// console.log(number.multiplication(100,5));
+// console.log(number.checkEvenOrOdd(11));
+// console.log(number.power(2,8));
+// console.log(number.factorial(5));
+
+
+// NOTE : Method creation in object using shorthand ES6
+
+// let display = {
+//     name : "Dinga",
+//     sayHello(name){
+//         console.log(`Hello ${name}`);
+//     },
+
+//     sayBye(name){
+//         console.log(`Bye ${name}`);
+//     }
+// }
+
+// display.sayHello('Ram')
+// display.sayBye('Ram')
+
+//! "this" keyword in Object
+// NOTE : "this" keyword refers to the current object
+
+
+// todo : Accessing the property of same object in method
+// let person = {
+//     fname : "Dinga",
+//     lname : "Raja",
+//     fullname(){
+//         console.log(`My name is ${this.fname} ${this.lname}`);
+//     }
+// }
+// person.fullname()
+
+// todo : Update the property of same object
+
+// let student = {
+//     name : "Dinga",
+//     updateName(newName){
+//         this.name = newName
+//     }
+// }
+// console.log(student.name);  // Dinga
+// student.updateName("Raja")
+// console.log(student.name);  // Raja
+
+
+// ! getter and setter functions
+
+// todo  : getter function is created using "get" keyword and It is used to read the values.
+// let person = {
+//     fname : "Dinga",
+//     lname : "Raja",
+//     get fullname(){
+//         return (`My name is ${this.fname} ${this.lname}`);   
+//     }
+// }
+// console.log(person.fullname);
+
+
+// todo  : setter function is created using "set" keyword and It is used to update the values.
+// let person = {
+//     name : "Dinga",
+//     set fullname(newValue){
+//         this.name = newValue
+//     }
+// }
+// console.log(person.name);
+// person.fullname = "Dingu"
+// console.log(person.name);
