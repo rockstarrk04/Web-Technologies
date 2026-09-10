@@ -282,7 +282,7 @@ console.warn("Arrays");
 // console.log(arr);          //?  [10, 20, Array(2), Array(3)]
 // console.log(arr.flat());   //? [10, 20, 'a', 'b', 1, 2, 3]
 
-// todo : concat() : It is used to 
+// todo : concat() : It is used to merge  data together.
 
 // let arr1 = [1,2,3]
 // let arr2 = [['a','b'],"XYZ"]
