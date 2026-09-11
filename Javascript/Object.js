@@ -275,3 +275,142 @@
 // console.log(person.name);
 // person.fullname = "Dingu"
 // console.log(person.name);
+
+// !======= 11-09-26 ==========================================================
+
+//! Create object using "new" keyword
+
+// // todo : Create the object
+// let car = new Object()
+// console.log(car);
+
+
+// // todo : add the property to object
+// car.name = "KIA"
+// car.colour = "Black"
+// car.model = 2026
+// console.log(car);
+
+// // todo : Update property of the object
+
+// car.colour = "Black & White"
+// console.log(car);
+
+
+// // todo : delete property of an object
+
+// delete car.colour
+// console.log(car);
+
+// !---------------------------------------------------
+//* Creating the object using constructor function
+
+// function Car(name){
+//     this.carname = name
+// }
+
+// let c1 = new Car("BMW")     // explicit fuunction converted to object using "new" keyword
+
+// console.log(c1);
+// console.log(typeof(c1));
+
+
+// todo : Create two object with 5 properties using constructor function
+
+// function student(name,age,city,branch,number){
+//     this.name = name
+//     this.age = age
+//     this.city = city
+//     this.branch = branch
+//     this.number = number
+// }
+
+// let s1 = new student("Ram",22,"Madurai","CSE",9876543210)
+// console.log(s1);
+// console.log(typeof s1);
+
+
+// let s2 = new student("Suneel",22,"Andhra","ECE",8986543210)
+// console.log(s2);
+// console.log(typeof s2);
+
+//! ==============================================
+
+//! Built-in Methods of Objects in Javascript   (Important Topic)
+ 
+// let student = {
+//     fname : "Dinga",
+//     lname : "Raja",
+//     age : 25
+// }
+// console.log(student);
+
+// //? Object.keys(ObjectName) ==> get only keys in an object , returns as string array
+// console.log(Object.keys(student));
+
+// //? Object.keys(ObjectName) ==> get only value in an object , returns as string array
+// console.log(Object.values(student));
+
+// //?Object.keys(ObjectName) ==> get key value pairs in an object , returns as string array
+// console.log(Object.entries(student));
+
+// //? Object.keys(ObjectName)[index_value] ==> get specific key value pair in entries() , returns as string array
+// console.log(Object.entries(student)[0]);
+
+
+//? Object.freeze(ObjectName) ==> Prevents the modification of existing property attributes and values, and     prevents the addition of new properties.
+
+// let student = {
+//     fname : "Dinga",
+//     place : "Goa"
+// }
+
+// Object.freeze(student)
+// console.log(student);
+
+// student.lname = "Raja"    //! adding new property is not possible
+// console.log(student);
+
+// student.place = "Bangalore"    //! updating property is not possible
+// console.log(student);
+
+// delete student.fname      //! deleting the property is not possible
+// console.log(student);
+
+//? Object.seal(ObjectName) ==> adding  , deleting properties is not possible , updating the value os properties is possible in existing properties.
+
+
+// let student = {
+//     fname : "Dinga",
+//     place : "Goa"
+// }
+// Object.seal(student)
+// console.log(student);
+
+// student.lname = "Raja"    //! adding new property is not possible
+// console.log(student);
+
+// student.place = "Bangalore"    //! updating property is possible
+// console.log(student);
+
+// delete student.fname      //! deleting the property is not possible
+// console.log(student);
+
+
+
+// ? Object.assign(object_Names)   ==> combine two object's properties and values to a single object
+
+// let username = {fname : "Dinga"}
+// let address = {city : "Goa"}
+// let user = Object.assign(username,address)
+// console.log(user);
+
+
+//? Object.hasOwn(object_Name , "property_name") ==> returns boolean value , whether that property is present in tha object or not.
+
+// let student = {
+//     fname : "Dinga",
+//     place : "Goa"
+// }
+// console.log(Object.hasOwn(student , "place"));    //* true
+// console.log(Object.hasOwn(student , "age"));    //* false
