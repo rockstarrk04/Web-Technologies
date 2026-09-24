@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Events With DOM</h1>
+
+    <h2>Event Attribute</h2>
+
+    <h3>Click Events</h3>
+    <button onclick="singleClick()" ondblclick="DoubleClick()">
+        Click Here
+    </button>
+    
+    <h3>Mouse Events</h3>
+    <img 
+        src="../Assignment/image/img2.jpg" alt="No image"  height="200px" width="200px"
+        onmouseover="imageHover()"
+    >
+
+    <h3>KeyBoard Events</h3>
+    <input type="text" placeholder="Enter Something..!" onkeypress="enterkey()">
+
+
+    <h2>Event Property</h2>
+
+    <h3>Click Events</h3>
+    <button id="btn-1">
+        Click here
+    </button>
+
+    <br><br>
+
+    <h3>Mouse Event</h3>
+    <img id="img-1"
+        src="../Assignment/image/img2.jpg" alt="No image" height="200px" width="200px"
+    >
+    <br><br>
+
+    <h3>KeyBoard Events</h3>
+    <input class="input" type="text" placeholder="Key Down">
+    <input class="input" type="text" placeholder="Key Up">
+
+
+    <h2>Event Method</h2>
+
+    <h3>Click Event</h3>
+    <button id="btn-2">
+        Click Here
+    </button>
+
+    <h3>Mouse Event</h3>
+    <img id="img-2"
+        src="../Assignment/image/img2.jpg" alt="No image" height="200px" width="200px"
+    >
+
+    <h3>KeyBoard Event</h3>
+    <input type="text" placeholder="Key Down" class="input1">
+    <input type="text" placeholder="Key Up" class="input1">
+
+
+
+    <script src="./Event-Handler.js"></script>
+</body>
+</html>
