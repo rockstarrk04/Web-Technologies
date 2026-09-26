@@ -1,0 +1,26 @@
+#box{
+    border: solid 2px black;
+    height: 150px;
+    width: 150px;
+}
+.red{
+    background: red;
+}
+
+.yellow{
+    background: yellow;
+}
+
+.green{
+    background: green;
+}
+
+.on{
+    border: solid 2px green;
+    color: green;
+}
+
+.off{
+    border: solid 2px red;
+    color: red;
+}

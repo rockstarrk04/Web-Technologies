@@ -41,3 +41,40 @@ btn3.addEventListener("click" , () => {
         btn3.style.cssText = `color : green ; border : solid 4px green`
     }
 })
+
+// Todo : addEventListener Method with event object
+
+let btn4 = document.querySelector("#btn4")
+btn4.addEventListener("click" , (event) => {
+    let btnText = event.target.innerText
+    if (btnText === "ON"){
+        event.target.innerText = "OFF"
+        btn4.style.cssText = `color : red ; border : solid 4px red`
+    } else{
+        event.target.innerText = "ON"
+        btn4.style.cssText = `color : green ; border : solid 4px green`
+    }
+})
+
+
+let dayNightbtn = document.getElementById("dayNightbtn")
+dayNightbtn.onclick = () => {
+    if (dayNightbtn.innerText === "Day"){
+        dayNightbtn.innerText = "Night"
+        document.body.style.cssText = `color:White ; background:black`
+    }else{
+        dayNightbtn.innerText = "Day"
+        document.body.style.cssText = `color:black ; background:white`
+    }
+}
+
+let GenerateOTP = document.getElementById('GenerateOTP')
+let generateOTP = () => {
+    let randomNumber = Math.random() * 10000
+    let otp = Math.floor(randomNumber)
+    if (otp > 1000){
+        GenerateOTP.innerText = otp
+    }else{
+        generateOTP()
+    }
+}

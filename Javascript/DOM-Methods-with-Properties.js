@@ -45,3 +45,5 @@ let colorWhite = "color : white"
 spiders[0].style.cssText = `${colorWhite} ; background : Orange`
 spiders[1].style.color = `blue`
 spiders[2].style.cssText = `${colorWhite} ; background : green`
+
+let divTag = document.getElementById('divTag')
