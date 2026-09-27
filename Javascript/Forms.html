@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Forms.css">
+</head>
+<body>
+    <h2>Print Name</h2>
+    <form onsubmit="printName(event)">
+        <input type="text" placeholder="Enter First name">
+        <input type="text" placeholder="Enter Last name">
+        <button>Submit</button>
+    </form>
+
+    <h3 id="displayName"></h3>
+    <hr>
+
+    <h2>Age Calculator</h2>
+    <form onsubmit="ageCalc(event)">
+        <input type="text" placeholder="Enter Name">
+        <input type="date">
+        <button>
+            Submit
+        </button>
+    </form>
+    <h3 id="displayAge"></h3>
+
+    <hr>
+
+    <h2>Empty Field Validation</h2>
+    <form id="emptyFieldValidation">
+        <input type="text" placeholder="Enter Username">
+        <input type="password" placeholder="Enter password">
+        <button>
+            Login
+        </button>
+    </form>
+    <div id="errormsz"></div>
+
+    <hr>
+
+    <h2>Login Page</h2>
+    <div class="formbox">
+        <h3>Enter Login Credential</h3>
+        <form id="loginform">
+            <input type="text" placeholder="Enter Email Address">
+            <input type="password" placeholder="Enter password">
+            <button> Submit </button>
+        </form>
+    </div>
+
+
+    <script src="./Forms.js"></script>
+</body>
+</html>
