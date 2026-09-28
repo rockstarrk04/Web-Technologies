@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+	--background: #111827;
+	--panel: rgba(31, 41, 55, 0.86);
+	--border: rgba(255, 255, 255, 0.12);
+	--text: #f9fafb;
+	--muted: #9ca3af;
+	--accent: #fbbf24;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	display: grid;
+	place-items: center;
+	padding: 24px;
+	color: var(--text);
+	background:
+		radial-gradient(circle at 15% 20%, rgba(251, 191, 36, 0.13), transparent 28%),
+		linear-gradient(135deg, #111827 0%, #1f2937 100%);
+	font-family: 'Space Grotesk', sans-serif;
+}
+
+body::before {
+	content: '';
+	position: fixed;
+	inset: 18px;
+	border: 1px solid rgba(255, 255, 255, 0.06);
+	pointer-events: none;
+}
+
+h1 {
+	position: absolute;
+	top: 11vh;
+	margin: 0;
+	color: var(--accent);
+	font-size: clamp(1rem, 2vw, 1.25rem);
+	font-weight: 600;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+}
+
+.container {
+	width: min(100%, 560px);
+	padding: clamp(28px, 7vw, 52px);
+	border: 1px solid var(--border);
+	border-radius: 18px;
+	background: var(--panel);
+	box-shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+	backdrop-filter: blur(12px);
+}
+
+.container h2 {
+	margin: 0;
+	padding: 20px 0;
+	border-bottom: 1px solid var(--border);
+	font-family: 'DM Mono', monospace;
+	font-size: clamp(1.35rem, 5vw, 2.5rem);
+	font-weight: 500;
+	text-align: center;
+	letter-spacing: 0.04em;
+}
+
+.container h2:first-child {
+	padding-top: 0;
+	color: var(--accent);
+	font-size: clamp(2.1rem, 9vw, 4.5rem);
+}
+
+.container h2:last-child {
+	padding-bottom: 0;
+	border-bottom: 0;
+	color: var(--muted);
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: clamp(1.1rem, 4vw, 1.5rem);
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+}
+
+@media (max-width: 480px) {
+	body {
+		padding: 16px;
+	}
+
+	body::before {
+		inset: 10px;
+	}
+
+	h1 {
+		top: 8vh;
+	}
+}

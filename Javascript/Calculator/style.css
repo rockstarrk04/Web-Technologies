@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+	color-scheme: light;
+	--page: #f4f6f8;
+	--panel: #ffffff;
+	--button: #f0f2f5;
+	--ink: #263238;
+	--muted: #8b969d;
+	--accent: #3f7edb;
+	--accent-hover: #326bc0;
+	--line: #dfe4e8;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	display: grid;
+	place-items: center;
+	padding: 24px;
+	background: var(--page);
+	color: var(--ink);
+	font-family: 'Space Grotesk', sans-serif;
+}
+
+table {
+	width: min(100%, 360px);
+	border: 0;
+	border-collapse: separate;
+	border-spacing: 8px;
+	padding: 18px;
+	overflow: hidden;
+	border-radius: 22px;
+	background: var(--panel);
+	box-shadow: 0 12px 30px rgba(38, 50, 56, 0.12);
+}
+
+tr:first-child th {
+	padding: 0 0 10px;
+}
+
+input {
+	width: 100%;
+	min-height: 88px;
+	padding: 18px;
+	border: 1px solid var(--line);
+	border-radius: 14px;
+	outline: none;
+	background: #fafbfc;
+	color: var(--ink);
+	font: 500 clamp(1.8rem, 8vw, 2.5rem) 'DM Mono', monospace;
+	text-align: right;
+	box-shadow: inset 0 1px 4px rgba(38, 50, 56, 0.06);
+}
+
+input::placeholder {
+	color: var(--muted);
+	font-size: 1.1rem;
+	letter-spacing: 0.08em;
+}
+
+th {
+	height: 58px;
+	min-width: 58px;
+	border: 1px solid var(--line);
+	border-radius: 12px;
+	background: var(--button);
+	color: var(--ink);
+	cursor: pointer;
+	font: 600 1.15rem 'DM Mono', monospace;
+	user-select: none;
+	transition: transform 140ms ease, background 140ms ease, color 140ms ease;
+}
+
+th:hover {
+	background: #e3e8ed;
+	transform: translateY(-2px);
+}
+
+th:active {
+	transform: translateY(1px) scale(0.97);
+}
+
+tr:nth-child(2) th:first-child,
+tr th:last-child {
+	background: var(--accent);
+	border-color: var(--accent);
+	color: #ffffff;
+}
+
+tr:nth-child(2) th:first-child:hover,
+tr th:last-child:hover {
+	background: var(--accent-hover);
+}
+
+tr:nth-child(2) th:nth-child(3),
+tr:nth-child(2) th:nth-child(4),
+tr:nth-child(3) th:last-child,
+tr:nth-child(4) th:last-child {
+	color: var(--accent);
+}
+
+@media (max-width: 420px) {
+	body {
+		padding: 12px;
+	}
+
+	table {
+		border-spacing: 6px;
+		padding: 12px;
+	}
+
+	th {
+		height: 54px;
+		min-width: 0;
+	}
+}
