@@ -1,0 +1,16 @@
+#root{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 5vh;
+}
+.card{
+    border: solid 1px black;
+    height: 200px;
+    width: 200px;
+    padding: 2vh 1vw;
+    text-align: center;
+}
+.card img{
+    width: 90%;
+}
